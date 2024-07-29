@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 340px; /* عرض المربع الأبيض */
+    height: 400px; /* ارتفاع المربع الأبيض الجديد */
+    text-align: center;
+    box-sizing: border-box; /* لضمان أن الحشو والحدود يتم احتسابها ضمن العرض والارتفاع */
+}
+
+.login-logo {
+    width: 230px; /* عرض الشعار المعدل */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 20px); /* تقليل العرض لتناسب الحجم الجديد */
+    padding: 8px; /* تقليل المسافة الداخلية */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f9f9f9;
+    font-size: 15px; /* حجم الخط داخل الحقل */
+    margin-bottom: 15px;
+    box-sizing: border-box; /* لضمان أن الحشو والحدود يتم احتسابها ضمن العرض */
+}
+
+input::placeholder {
+    color: #999; /* لون النص في placeholder */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* إضافة مسافة أسفل الزر */
+}
+
+button:hover {
+    background-color: #155dbb;
+}
+
+.forgot-password {
+    font-size: 14px; /* حجم الخط */
+    color: #1877f2; /* لون النص */
+    margin: 0; /* إزالة الهامش الافتراضي */
+}
+
+.forgot-password a {
+    text-decoration: none; /* إزالة التسطير */
+    color: #1877f2; /* لون الرابط */
+}
+
+.forgot-password a:hover {
+    text-decoration: underline; /* إضافة التسطير عند التمرير */
+}
+
+.additional-image {
+    width: 230px; /* عرض الصورة الجديد */
+    height: auto;
+    margin-top: 25px; /* مسافة فوق الصورة */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: none; /* إخفاء الرسالة بشكل افتراضي */
+    margin-top: 10px;
+}
